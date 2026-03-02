@@ -36,9 +36,11 @@ app.get("/api/sendMail", async (req, res) => {
     //   email: "asmaul123sarder@gmail.com",
     // },
   ];
-  const subject = "Test Email";
-  const html = "<h1>Hello from Bulk Mailer</h1><p>This is a test email.</p>";
-  const text = "Hello from Bulk Mailer. This is a test email.";
+  const subject = "Check out our new product!";
+  const html =
+    "<h1>Hello from Bulk Mailer,</h1><p>This is a test email and for demonstration purposes only.</p>";
+  const text =
+    "Hello from Bulk Mailer,\nThis is a test email and for demonstration purposes only.";
 
   for (let i = 0; i < recipients.length; i++) {
     try {
