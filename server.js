@@ -24,14 +24,17 @@ app.get("/api/data", (req, res) => {
 app.get("/api/sendMail", async (req, res) => {
   let recipients = [
     {
+      email: "asmaulsarder@yahoo.com",
+    },
+    {
       email: "asmaulsarder@outlook.com",
     },
-    {
-      email: "mdasmaulsarder123@gmail.com",
-    },
-    {
-      email: "asmaul123sarder@gmail.com",
-    },
+    // {
+    //   email: "mdasmaulsarder123@gmail.com",
+    // },
+    // {
+    //   email: "asmaul123sarder@gmail.com",
+    // },
   ];
   const subject = "Test Email";
   const html = "<h1>Hello from Bulk Mailer</h1><p>This is a test email.</p>";
